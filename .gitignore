@@ -1,0 +1,90 @@
+# ========================================================
+# .gitignore cho Dự án Cờ Tướng Tu Tiên: Bách Chiến Tiên Cục
+# C++ / CMake / Visual Studio 2022 / SFML
+# ========================================================
+
+# --- Thư mục & File Build của CMake & Compilers ---
+build/
+bin/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# --- Visual Studio & MSVC Generated Files ---
+.vs/
+*.sln.docstates
+*.suo
+*.user
+*.userosv
+*.userprefs
+*.vcxproj.user
+*.vcxproj.filters.user
+*.db
+*.opendb
+Debug/
+Release/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# --- File nhị phân & biên dịch trung gian (Binaries & Object Files) ---
+*.obj
+*.o
+*.tlog
+*.idb
+*.pdb
+*.ilk
+*.exp
+*.res
+*.pch
+*.ipch
+
+# File thực thi và thư viện động sinh ra từ build (không nằm trong third_party)
+# (Các file .dll/.exe chính trong build/ đã bị ignore bởi rule build/)
+*.exe
+*.dll.manifest
+
+# --- VS Code & JetBrains IDEs ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+cmake-build-*/
+
+# --- Agent & AI Workspace Cache ---
+.agents/
+
+# --- Dữ liệu ván cờ cá nhân & Cài đặt người dùng khi chạy game ---
+assets/settings.json
+assets/saves/*.json
+!assets/saves/.gitkeep
+
+# --- File nén lưu trữ ---
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# --- Hệ điều hành (OS Artifacts) ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Third-party Prebuilt Binaries (Tùy chọn) ---
+# Mặc định KHÔNG bỏ qua third_party/SFML-2.6.1 để người khác clone về có thể build ngay.
+# Nếu bạn muốn repository nhẹ hơn và yêu cầu người khác tự tải SFML, hãy bỏ comment dòng dưới:
+# third_party/SFML-2.6.1/
+

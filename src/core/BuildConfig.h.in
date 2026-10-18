@@ -1,0 +1,7 @@
+#pragma once
+
+// File này do CMake sinh ra tự động (configure_file). Không sửa trực tiếp.
+// Đường dẫn tuyệt đối tới thư mục assets/ trong cây mã nguồn — dùng làm
+// phương án dự phòng cuối cùng khi không tìm thấy assets cạnh file chạy.
+#define BCT_SOURCE_ASSETS_DIR "@CMAKE_CURRENT_SOURCE_DIR@/assets"
+#define BCT_PROJECT_NAME "@PROJECT_NAME@"
